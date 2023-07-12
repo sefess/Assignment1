@@ -1,0 +1,351 @@
+* {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, p, ul, li, form {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff69b4;
+}
+
+/* Hero section styles */
+#hero {
+  height: 500px;
+  background-image: url('https://source.unsplash.com/YDNvydD1jAY/');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content h2 {
+   font-size: 32px;
+  margin-bottom: 20px;
+  color: #f7f3f5;
+  text-align: right;
+  text-shadow: 2px 2px 4px #010f0d;
+  
+}
+
+/* Flower section styles */
+#flowers {
+  padding: 70px;
+  background-color: #fff;
+}
+.flowers-h2{
+  padding: 70px;
+  text-align: center;
+}
+
+.flower-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flower {
+  flex: 1;
+  text-align: center;
+  margin: 10px;
+}
+
+.flower img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.flower p {
+  margin-top: 10px;
+}
+
+.flowers-h2{
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Deals section styles */
+#deals {
+  background-color: #f5f5f5;
+  padding: 40px;
+}
+
+.deal-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-container {
+  width: 300px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.text-container {
+  text-align: right;
+  margin-left: 40px;
+}
+
+.text-container h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.text-container p {
+  margin-bottom: 20px;
+}
+
+.signup-btn {
+  background-color: #ff69b4;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+  background-color: #ff1493;
+}
+
+/* Our Blog section styles */
+#blog {
+  padding: 40px;
+  background-color: #fff;
+}
+
+.blog-articles {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.blog-article {
+  text-align: center;
+}
+
+.blog-article img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Photos section styles */
+#photos {
+  padding: 40px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.photos-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.photo-box {
+  flex: 0 0 300px;
+  text-align: center;
+}
+
+.photo-box img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Subscribe section styles */
+#subscribe.newsletter-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://source.unsplash.com/WBpr_yH0Frg/');
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+}
+
+.newsletter-content {
+  text-align: center;
+  color: #fff;
+}
+
+.newsletter-content h2 {
+  margin-bottom: 20px;
+}
+
+.newsletter-content form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter-content input[type="email"],
+.newsletter-content button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.newsletter-content input[type="email"] {
+  width: 300px;
+  margin-right: 10px;
+}
+
+.newsletter-content button.subscribe-btn {
+  background-color: #ff69b4;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-content button.subscribe-btn:hover {
+  background-color: #ff1493;
+}
+
+
+/* Contact section styles */
+#contact {
+  padding: 40px;
+  background-color: #fff;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #ff69b4;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #ff1493;
+}
+
+/* Footer styles */
+footer {
+  background-color: #080000;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo img {
+  height: 30px;
+}
+
+.footer-content p {
+  color: #333;
+  font-size: 14px;
+}
+
+/* Hero section styles */
+#hero {
+  position: relative;
+  height: 400px;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+
+.hero-content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.signup-button {
+  display: inline-block;
+  background-color: #ff69b4;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+  background-color: #ff1493;
+}
